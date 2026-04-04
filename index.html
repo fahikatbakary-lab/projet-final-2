@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CreaDigit - Nous aidons les entreprises à réussir en ligne. Développement web, Infographie, Marketing digital.">
+    <title>CreaDigit - Votre Partenaire Digital</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS for grid / structure -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR -->
+    <header class="header glass-navbar">
+        <div class="container d-flex justify-content-between align-items-center h-100">
+            <a href="#" class="logo">
+                Crea<span class="color-brown">DIgit</span>
+            </a>
+
+            <!-- Pure CSS Hamburger Menu -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span><i class="fa-solid fa-bars color-brown"></i></span>
+            </label>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact" class="btn-contact-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative text-center text-white fade-in">
+            <h1 class="hero-title mb-4">Nous aidons les entreprises à réussir en ligne avec Crea<span
+                    class="color-brown-light">DIgit</span></h1>
+            <p class="hero-subtitle mb-5">Développement web, infographie et marketing digital pour propulser votre
+                activité.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#services" class="btn-custom btn-primary-custom">Nos services</a>
+                <a href="#contact" class="btn-custom btn-outline-custom">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. À PROPOS -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in-left">
+                    <div class="about-image mask-image">
+                        <img src="image/apropos.webp" alt="À propos de CreaDigit" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-right">
+                    <h2 class="section-title">À propos de Crea<span class="color-brown">DIgit</span></h2>
+                    <div class="title-underline"></div>
+                    <p class="mt-4">
+                        Chez <strong>Crea<span class="color-brown">DIgit</span></strong>, nous transformons vos idées en
+                        expériences numériques captivantes. Notre agence est dédiée aux petites entreprises, commerçants
+                        en ligne et entrepreneurs.
+                    </p>
+                    <p>
+                        <strong>Notre mission :</strong> Vous doter d'outils modernes pour surpasser vos concurrents.
+                        <br>
+                        <strong>Notre vision :</strong> Devenir votre partenaire digital à long terme grâce à un design
+                        innovant et des stratégies percutantes.
+                    </p>
+                    <ul class="about-list mt-4">
+                        <li><i class="fa-solid fa-check"></i> Approche personnalisée</li>
+                        <li><i class="fa-solid fa-check"></i> Design élégant & moderne</li>
+                        <li><i class="fa-solid fa-check"></i> Résultats orientés croissance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES -->
+    <section id="services" class="services section-padding bg-light-custom">
+        <div class="container text-center">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="title-underline mx-auto"></div>
+            <p class="section-subtitle mt-3 mb-5">L'expertise Crea<span class="color-brown">DIgit</span> à votre service
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card glass-card p-0">
+                        <img src="image/dev.png" alt="Développement Web" class="img-fluid w-100 service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Développement Web</h3>
+                            <p class="service-desc">Sites vitrines et e-commerce sur-mesure, performants et 100%
+                                responsive,
+                                avec du code propre et bien organisé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card glass-card p-0">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&h=400&fit=crop"
+                            alt="Infographie" class="img-fluid w-100 service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Infographie & Design</h3>
+                            <p class="service-desc">Création d'identités visuelles, logos, et designs graphiques
+                                esthétiques
+                                qui marquent l'esprit de vos clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card glass-card p-0">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&h=400&fit=crop"
+                            alt="Marketing Digital" class="img-fluid w-100 service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Marketing Digital</h3>
+                            <p class="service-desc">Stratégies sur-mesure, gestion des réseaux sociaux et SEO pour
+                                augmenter
+                                votre visibilité et vos ventes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PORTFOLIO -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Notre Portfolio</h2>
+            <div class="title-underline mx-auto"></div>
+            <p class="section-subtitle mt-3 mb-5">Quelques projets réalisés par Crea<span
+                    class="color-brown">DIgit</span></p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card glass-card p-0">
+                        <div class="portfolio-card-img">
+                            <img src="image/dev.png" alt="Projet Web" class="img-fluid w-100">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-badge">Développement Web</span>
+                            <h4 class="portfolio-card-title mt-2 mb-3">Site E-commerce</h4>
+                            <a href="https://github.com/fahikatbakary-lab/restaurant-ivoire" target="_blank"
+                                class="btn-custom btn-outline-custom-dark w-100 text-center"
+                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card glass-card p-0">
+                        <div class="portfolio-card-img">
+                            <img src="image/Indentite.webp" alt="Projet Design" class="img-fluid w-100">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-badge">Infographie</span>
+                            <h4 class="portfolio-card-title mt-2 mb-3">Identité Visuelle</h4>
+                            <a href="https://github.com/" target="_blank"
+                                class="btn-custom btn-outline-custom-dark w-100 text-center"
+                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-card glass-card p-0">
+                        <div class="portfolio-card-img">
+                            <img src="image/merketing.webp" alt="Projet Marketing" class="img-fluid w-100">
+                        </div>
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-badge">Marketing Digital</span>
+                            <h4 class="portfolio-card-title mt-2 mb-3">Campagne Social Media</h4>
+                            <a href="https://github.com/" target="_blank"
+                                class="btn-custom btn-outline-custom-dark w-100 text-center"
+                                style="font-size: 0.9rem;"><i class="fa-solid fa-chart-line me-2"></i> Voir l'étude</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- 6. TÉMOIGNAGES -->
+    <section id="testimonials" class="testimonials section-padding bg-light-custom">
+        <div class="container text-center">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="title-underline mx-auto"></div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">"Grâce à Crea<span class="color-brown">DIgit</span>, mon entreprise
+                            a enfin une vraie présence en ligne. Le site est magnifique !"</p>
+                        <h5 class="client-name">Jean Dupont</h5>
+                        <p class="client-role">Entrepreneur</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">"L'équipe a refait tout notre branding. Le design est moderne,
+                            élégant, exactement ce qu'on voulait."</p>
+                        <h5 class="client-name">Marie Claire</h5>
+                        <p class="client-role">Commerçante en ligne</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card glass-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">"Excellente stratégie de marketing digital, nos ventes ont augmenté
+                            de 40% en deux mois !"</p>
+                        <h5 class="client-name">Paul Lemaire</h5>
+                        <p class="client-role">Propriétaire de PME</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section section-padding text-center pb-0">
+        <div class="container">
+            <div class="glass-card d-inline-block py-5 px-4 px-md-5 mx-auto" style="border-top: 4px solid var(--clr-brown-dark); max-width: 800px;">
+                <h2 class="fw-bold mb-4" style="color: var(--clr-brown-dark); font-size: 2.2rem;">Vous attendez quoi pour nous contacter ?</h2>
+                <p class="mb-4 text-muted" style="font-size: 1.1rem;">Notre équipe est prête à transformer votre vision en une réalité numérique percutante.</p>
+                <a href="#contact" class="btn-custom btn-primary-custom px-5 py-3" style="font-size: 1.1rem; border-radius: 30px;">Démarrer maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contactez-nous</h2>
+                <div class="title-underline mx-auto"></div>
+                <p class="section-subtitle mt-3">Prêt à démarrer votre projet avec Crea<span
+                        class="color-brown">DIgit</span> ?</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-form-container glass-card h-100">
+                        <form action="#" class="pure-css-form h-100 d-flex flex-column justify-content-center">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <div class="form-group">
+                                        <input type="text" id="name" class="form-control-custom" placeholder=" "
+                                            required>
+                                        <label for="name">Votre Nom</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" id="email" class="form-control-custom" placeholder=" "
+                                            required>
+                                        <label for="email">Votre Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 flex-grow-1">
+                                <textarea id="message" rows="5" class="form-control-custom h-100" placeholder=" "
+                                    required></textarea>
+                                <label for="message">Votre Message</label>
+                            </div>
+                            <div class="text-center mt-auto">
+                                <button type="submit" class="btn-custom btn-primary-custom w-100"><i
+                                        class="fa-solid fa-paper-plane me-2"></i> Envoyer le message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map-container glass-card h-100 p-2 overflow-hidden" style="min-height: 350px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.731111534105!2d-4.000053026031914!3d5.304589136128719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebfb2535b3db%3A0x505aa2981b04c27f!2sMarch%C3%A9%20Belleville%2C%20Treichville%20Abidjan%2CCote!5e0!3m2!1sfr!2sci!4v1775245188028!5m2!1sfr!2sci"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 pt-4">
+                    <h3 class="footer-logo">Crea<span class="color-brown-light">DIgit</span></h3>
+                    <p class="footer-desc mt-3">Votre agence digitale de confiance, spécialisée en développement web,
+                        design graphique et marketing digital. Nous aidons votre entreprise à briller sur le net.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0 pt-4 text-md-center">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-4 text-md-end">
+                    <h4 class="footer-title">Nous Suivre</h4>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center border-top-custom pt-4 mt-4">
+                <p>&copy; 2026 Crea<span class="color-brown-light">DIgit</span>. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
