@@ -26,6 +26,15 @@
 
 <body>
 
+    <!-- Loader (CSS-only) -->
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+        <div class="loader-inner">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+        </div>
+    </div>
+
     <!-- 1. NAVBAR -->
     <header class="header glass-navbar">
         <div class="container d-flex justify-content-between align-items-center h-100">
@@ -60,9 +69,88 @@
                     class="color-brown-light">DIgit</span></h1>
             <p class="hero-subtitle mb-5">Développement web, infographie et marketing digital pour propulser votre
                 activité.</p>
+            <p class="hero-dynamic text-uppercase mb-5">Spécialités :
+                <span class="dynamic-words" aria-hidden="true">
+                    <span>Développement Web</span>
+                    <span>Infographie &amp; Design</span>
+                    <span>Marketing Digital</span>
+                </span>
+            </p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="#services" class="btn-custom btn-primary-custom">Nos services</a>
                 <a href="#contact" class="btn-custom btn-outline-custom">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2.5 STATISTIQUES -->
+    <section class="stats section-padding bg-light-custom">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="stat-card glass-card p-4">
+                        <div class="stat-number">
+                            <span class="count" aria-hidden="true">
+                                <span>0</span>
+                                <span>10</span>
+                                <span>20</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>50</span>
+                            </span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Projets Réalisés</p>
+                        <div class="stat-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="stat-card glass-card p-4">
+                        <div class="stat-number">
+                            <span class="count" aria-hidden="true">
+                                <span>0</span>
+                                <span>25</span>
+                                <span>50</span>
+                                <span>75</span>
+                                <span>90</span>
+                                <span>98</span>
+                            </span>
+                            <span class="stat-percent">%</span>
+                        </div>
+                        <p class="stat-label">Clients Satisfaits</p>
+                        <div class="stat-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="stat-card glass-card p-4">
+                        <div class="stat-number">
+                            <span class="count" aria-hidden="true">
+                                <span>0</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                            </span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Années d'Expérience</p>
+                        <div class="stat-bar"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="stat-card glass-card p-4">
+                        <div class="stat-number">
+                            <span class="count" aria-hidden="true">
+                                <span>0</span>
+                                <span>5</span>
+                                <span>10</span>
+                                <span>15</span>
+                            </span>
+                            <span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Clients Actifs</p>
+                        <div class="stat-bar"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -73,7 +161,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0 fade-in-left">
                     <div class="about-image mask-image">
-                        <img src="image/apropos.webp" alt="À propos de CreaDigit" class="img-fluid rounded shadow-lg">
+                        <img src="image/apropos.webp" alt="À propos de CreaDigit" class="img-fluid rounded shadow-lg" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6 fade-in-right">
@@ -111,7 +199,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="service-card glass-card p-0">
-                        <img src="image/dev.png" alt="Développement Web" class="img-fluid w-100 service-image">
+                        <img src="image/dev.png" alt="Développement Web" class="img-fluid w-100 service-image" loading="lazy">
                         <div class="service-content">
                             <h3 class="service-title">Développement Web</h3>
                             <p class="service-desc">Sites vitrines et e-commerce sur-mesure, performants et 100%
@@ -123,7 +211,7 @@
                 <div class="col-md-4">
                     <div class="service-card glass-card p-0">
                         <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=600&h=400&fit=crop"
-                            alt="Infographie" class="img-fluid w-100 service-image">
+                            alt="Infographie" class="img-fluid w-100 service-image" loading="lazy">
                         <div class="service-content">
                             <h3 class="service-title">Infographie & Design</h3>
                             <p class="service-desc">Création d'identités visuelles, logos, et designs graphiques
@@ -135,7 +223,7 @@
                 <div class="col-md-4">
                     <div class="service-card glass-card p-0">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&h=400&fit=crop"
-                            alt="Marketing Digital" class="img-fluid w-100 service-image">
+                            alt="Marketing Digital" class="img-fluid w-100 service-image" loading="lazy">
                         <div class="service-content">
                             <h3 class="service-title">Marketing Digital</h3>
                             <p class="service-desc">Stratégies sur-mesure, gestion des réseaux sociaux et SEO pour
@@ -156,52 +244,154 @@
             <p class="section-subtitle mt-3 mb-5">Quelques projets réalisés par Crea<span
                     class="color-brown">DIgit</span></p>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+            <!-- Portfolio Filters (CSS-only) -->
+            <div class="portfolio-filters mb-4 d-flex justify-content-center gap-3 align-items-center">
+                <input type="radio" name="portfolio-filter" id="filter-all" checked>
+                <label for="filter-all" class="filter-label">Tous</label>
+                <input type="radio" name="portfolio-filter" id="filter-dev">
+                <label for="filter-dev" class="filter-label">Développement Web</label>
+                <input type="radio" name="portfolio-filter" id="filter-design">
+                <label for="filter-design" class="filter-label">Infographie</label>
+                <input type="radio" name="portfolio-filter" id="filter-marketing">
+                <label for="filter-marketing" class="filter-label">Marketing Digital</label>
+            </div>
+
+            <div class="row g-4 portfolio-grid">
+                <div class="col-md-6 col-lg-4" data-cat="dev">
                     <div class="portfolio-card glass-card p-0">
                         <div class="portfolio-card-img">
-                            <img src="image/dev.png" alt="Projet Web" class="img-fluid w-100">
+                            <img src="image/Site.png" alt="Projet Web" class="img-fluid w-100" loading="lazy">
                         </div>
                         <div class="portfolio-card-content">
                             <span class="portfolio-badge">Développement Web</span>
-                            <h4 class="portfolio-card-title mt-2 mb-3">Site E-commerce</h4>
-                            <a href="https://github.com/fahikatbakary-lab/restaurant-ivoire" target="_blank"
+                            <h4 class="portfolio-card-title mt-2 mb-3">Site Touristique</h4>
+                            <a href="https://site-touristique-seven.vercel.app/" target="_blank"
                                 class="btn-custom btn-outline-custom-dark w-100 text-center"
-                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le code</a>
+                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le projet 1</a>
+
+                              <a href="https://restaurant-ivoire.vercel.app/" target="_blank"
+                                class="btn-custom btn-outline-custom-dark w-100 text-center"
+                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le projet 2</a>
+
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-cat="design">
                     <div class="portfolio-card glass-card p-0">
                         <div class="portfolio-card-img">
-                            <img src="image/Indentite.webp" alt="Projet Design" class="img-fluid w-100">
+                            <img src="image/Réveil Toasmasters club.png" alt="Projet Design" class="img-fluid w-100" loading="lazy">
                         </div>
                         <div class="portfolio-card-content">
                             <span class="portfolio-badge">Infographie</span>
                             <h4 class="portfolio-card-title mt-2 mb-3">Identité Visuelle</h4>
-                            <a href="https://github.com/" target="_blank"
+                            <a href="image/Réveil Toasmasters club.png" target="_blank"
                                 class="btn-custom btn-outline-custom-dark w-100 text-center"
-                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le projet</a>
+                                style="font-size: 0.9rem;"><i class="fa-brands fa-github me-2"></i> Voir le projet 1</a>
+
+                         <a href="image/visuel.jpeg" target="_blank"
+                            class="btn-custom btn-outline-custom-dark w-100 text-center"
+                            style="font-size: 0.9rem;">
+                            <i class="fa-brands fa-github me-2"></i> Voir le projet 2
+                        </a>
+               
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-cat="marketing">
                     <div class="portfolio-card glass-card p-0">
                         <div class="portfolio-card-img">
-                            <img src="image/merketing.webp" alt="Projet Marketing" class="img-fluid w-100">
+                            <img src="image/merketing.webp" alt="Projet Marketing" class="img-fluid w-100" loading="lazy">
                         </div>
                         <div class="portfolio-card-content">
                             <span class="portfolio-badge">Marketing Digital</span>
                             <h4 class="portfolio-card-title mt-2 mb-3">Campagne Social Media</h4>
                             <a href="https://github.com/" target="_blank"
                                 class="btn-custom btn-outline-custom-dark w-100 text-center"
-                                style="font-size: 0.9rem;"><i class="fa-solid fa-chart-line me-2"></i> Voir l'étude</a>
+                                style="font-size: 0.9rem; display: inline-block; padding: 12px 20px; line-height: 1.2;">
+                                <div style="font-weight: 700;"><i class="fa-solid fa-chart-line me-2"></i>Voir l'étude</div>
+                                <div style="font-size: 0.78rem; margin-top: 4px; color: var(--clr-brown-dark);">+245% trafic · 3,500+ leads · 320% ROI</div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </div>
+        </div>
     </section>
+
+    <!-- Nouvelle section: Notre Méthode -->
+    <section id="method" class="method section-padding bg-light-custom">
+        <div class="container">
+            <h2 class="section-title text-center">Notre Méthode</h2>
+            <div class="title-underline mx-auto"></div>
+            <p class="section-subtitle text-center mt-3 mb-5">Un processus clair et éprouvé pour garantir votre succès</p>
+
+            <div class="row g-4 align-items-start">
+                <div class="col-md-3">
+                    <div class="method-card glass-card text-center p-4">
+                        <h4 class="mb-2">1. Analyse des besoins</h4>
+                        <p class="mb-0">Compréhension complète de vos objectifs et contraintes.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="method-card glass-card text-center p-4">
+                        <h4 class="mb-2">2. Conception</h4>
+                        <p class="mb-0">Wireframes, maquettes et choix UX/UI sur mesure.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="method-card glass-card text-center p-4">
+                        <h4 class="mb-2">3. Développement</h4>
+                        <p class="mb-0">Intégration responsive, tests et optimisation performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="method-card glass-card text-center p-4">
+                        <h4 class="mb-2">4. Livraison</h4>
+                        <p class="mb-0">Mise en ligne, formation et suivi post-livraison.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (details/summary accessible) -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">FAQ</h2>
+            <div class="title-underline mx-auto"></div>
+            <div class="accordion mt-4 mx-auto" style="max-width:900px;">
+                <details>
+                    <summary>Combien de temps prend la création d'un site ?</summary>
+                    <div class="accordion-content">
+                        <p>Le délai varie selon la taille du projet. En général : 2-6 semaines pour un site vitrine.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Quels services propose CreaDigit ?</summary>
+                    <div class="accordion-content">
+                        <p>Développement web, infographie, marketing digital, maintenance et accompagnement.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Comment demander un devis ?</summary>
+                    <div class="accordion-content">
+                        <p>Utilisez le formulaire de contact ou envoyez-nous un email avec votre brief et vos objectifs.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Proposez-vous un accompagnement après livraison ?</summary>
+                    <div class="accordion-content">
+                        <p>Oui, nous proposons des packs de maintenance et d'accompagnement à la performance.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top (CSS-only) -->
+    <a href="#hero" class="back-to-top" aria-label="Retour en haut">↑</a>
 
     <!-- 6. TÉMOIGNAGES -->
     <section id="testimonials" class="testimonials section-padding bg-light-custom">
@@ -265,25 +455,25 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-6">
                     <div class="contact-form-container glass-card h-100">
-                        <form action="#" class="pure-css-form h-100 d-flex flex-column justify-content-center">
+                        <form action="#" method="post" class="pure-css-form h-100 d-flex flex-column justify-content-center">
                             <div class="row mb-3">
                                 <div class="col-md-6 mb-4 mb-md-0">
                                     <div class="form-group">
-                                        <input type="text" id="name" class="form-control-custom" placeholder=" "
+                                        <input type="text" id="name" name="Nom" class="form-control-custom" placeholder=" "
                                             required>
                                         <label for="name">Votre Nom</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" id="email" class="form-control-custom" placeholder=" "
+                                        <input type="email" id="email" name="Email" class="form-control-custom" placeholder=" "
                                             required>
                                         <label for="email">Votre Email</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mb-4 flex-grow-1">
-                                <textarea id="message" rows="5" class="form-control-custom h-100" placeholder=" "
+                                <textarea id="message" name="Message" rows="5" class="form-control-custom h-100" placeholder=" "
                                     required></textarea>
                                 <label for="message">Votre Message</label>
                             </div>
@@ -300,8 +490,6 @@
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.731111534105!2d-4.000053026031914!3d5.304589136128719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebfb2535b3db%3A0x505aa2981b04c27f!2sMarch%C3%A9%20Belleville%2C%20Treichville%20Abidjan%2CCote!5e0!3m2!1sfr!2sci!4v1775245188028!5m2!1sfr!2sci"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        </iframe>
                     </div>
                 </div>
             </div>
@@ -342,6 +530,9 @@
         </div>
     </footer>
 
-</body>
+    <!-- Main JS (lightweight behaviours) -->
+    <script src="main.js" defer></script>
+
+    </body>
 
 </html>
