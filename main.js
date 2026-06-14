@@ -12,6 +12,15 @@
       loader.setAttribute('aria-hidden','true');
       setTimeout(function(){ if(loader.parentNode) loader.parentNode.removeChild(loader); }, 700);
     }
+
+    // Ensure mobile/tablet start at top (unless URL has a hash)
+    try{
+      var maxWidth = 992; // breakpoint for tablet/phone
+      if(!window.location.hash && window.innerWidth <= maxWidth){
+        // small timeout to allow browser to settle before forcing scroll
+        setTimeout(function(){ window.scrollTo({ top: 0, left: 0, behavior: 'auto' }); }, 50);
+      }
+    }catch(e){ /* ignore */ }
   });
 
   // Back to top visibility + smooth scroll
@@ -68,7 +77,7 @@
           io.disconnect();
         }
       });
-    }, { root: null, threshold: 0.3 });
+    }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
     io.observe(statSection);
   }
 
